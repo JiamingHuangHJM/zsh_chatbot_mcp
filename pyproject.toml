@@ -1,0 +1,44 @@
+[project]
+name = "zsh-chatbot-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "annotated-types==0.7.0",
+    "anthropic==0.49.0",
+    "anyio==4.8.0",
+    "certifi==2025.1.31",
+    "click==8.1.8",
+    "colorama==0.4.6",
+    "colour==0.1.5",
+    "distro==1.9.0",
+    "h11==0.14.0",
+    "httpcore==1.0.7",
+    "httpx==0.28.1",
+    "httpx-sse==0.4.0",
+    "idna==3.10",
+    "jiter==0.8.2",
+    "mcp==1.3.0",
+    "pydantic==2.10.6",
+    "pydantic-core==2.27.2",
+    "pydantic-settings==2.8.1",
+    "python-dotenv==1.0.1",
+    "sniffio==1.3.1",
+    "sse-starlette==2.2.1",
+    "starlette==0.46.0",
+    "tkmacosx==1.0.5",
+    "typing-extensions==4.12.2",
+    "uvicorn==0.34.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+
+[project.scripts]
+zsh_bot = "client.main:main"
+
+
+
+
